@@ -1,8 +1,20 @@
-.terraform/
-*.tfstate
-*.tfstate.*
-crash.log
-terraform.tfstate
-terraform.tfstate.backup
-terraform-key
-terraform-key.pub
+# Terraform
+**/.terraform/
+**/*.tfstate
+**/*.tfstate.*
+**/crash.log
+
+# Variables
+*.tfvars
+*.tfvars.json
+
+# SSH Keys
+*.pem
+*-key
+*-key.pub
+
+# VS Code
+.vscode/
+
+# Keep Terraform lock file
+!.terraform.lock.hcl
